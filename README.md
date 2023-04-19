@@ -1,5 +1,15 @@
-## Ingeniero Oscar Javier García Chacón
+## <p align="">Oscar Javier García Chacón, Ingeniero Especialista en  Logistica, Data Analytics y Data Scientis. Azure Fundamentals.</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/osgarcia1120/" target="blank"><img src="https://media.licdn.com/dms/image/C4D03AQHNV6mhjvHYYw/profile-displayphoto-shrink_800_800/0/1520908331128?e=1687392000&v=beta&t=TIZJtdFwPH2juSVy8tnn2fB5yUS00D59ZX59ngaQg0w" width="200" alt="Nest Logo" /></a>
+</p>
+
+
 ### Prueba SQL - Neoris
+
+### En el siguiente Link se puede acceder al archivo COLAB en el cual se desarrollaron las consultas.
+
+>https://drive.google.com/file/d/1B0c6b5nMD3n43E2xXVgF-dnG9ZrWEEGo/view?usp=sharing
 
 
 #### Base de datos
