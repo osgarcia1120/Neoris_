@@ -122,8 +122,8 @@ Nota: Fecha = Fecha de evaluación
 
 ### SQL: Pregunta 2: Obtener la mejor nota de cada nivel, por materia, incluir apellido, nombre del estudiante y materia.
 
-### La respuesta a este punto se realiza utilizando la funcion MAX en el campo nota de la tabla Examen y realizando un JOIN con los campos requeridos de las tablas Estudiante y Materia
-### Teniendo en cuenta que hay campo nivel en la tabla Estudiante y en la tabla Materia, se realizan dos soluciones, una bajo el nivel de Materia y la otra en Estudiante
+#### La respuesta a este punto se realiza utilizando la funcion MAX en el campo nota de la tabla Examen y realizando un JOIN con los campos requeridos de las tablas Estudiante y Materia
+#### Teniendo en cuenta que hay campo nivel en la tabla Estudiante y en la tabla Materia, se realizan dos soluciones, una bajo el nivel de Materia y la otra en Estudiante
 
 
 #### Ejercicio # 2.1
@@ -171,6 +171,8 @@ Nota: Fecha = Fecha de evaluación
 
 ### SQL: Pregunta 3: Obtener los estudiantes que hayan rendido mas de un examen de alguna materia siempre y cuando la segunda vez se haya obtenido una mejor nota, incluir la nota, el apellido y nombre del estudiante, la materia y el nivel.
 
+#### Esta consulta se realiza aplicando un JOIN entre los campos relevantes de lass tablas Examen, Estudiante y Materia. Para cumplir con la condicion de la mejor nota para aquellos estudiantes que han presentdo mas de una vez el examen, se aplica una una subconsulta en la cual buscamos la menor nota de los estudiantes para ser descartada en la consulta final.
+
 >conn = sqlite3.connect('test.db')
 >
 >cursor = conn.execute('''
@@ -194,7 +196,7 @@ Nota: Fecha = Fecha de evaluación
 
 ### SQL: Pregunta 4: Obtener los apellidos y nombres de los estudiantes que han rendido exámenes de materias de un nivel diferente al que están cursando, incluir la materia y la nota obtenida, ordenar alfabéticamente por el apellido del estudiante.
 
-### La respuesta a este punto se da por un JOIN entre la tabla Examen y los campos requeridos de Estudiante y Materia; posteriormente se activa una condiciones para determina cuales estudiantes estan presentado examenes de un nivel diferente al que estan.
+#### La respuesta a este punto se da por un JOIN entre la tabla Examen y los campos requeridos de Estudiante y Materia; posteriormente se activa una condiciones para determina cuales estudiantes estan presentado examenes de un nivel diferente al que estan.
 
 >conn = sqlite3.connect('test.db')
 >
@@ -220,7 +222,7 @@ Nota: Fecha = Fecha de evaluación
 
 ### SQL: Pregunta 5: Obtener los promedios totales por materia, en los casos de estudiantes que rindieron mas de un examen en alguna materia, considerar la mejor nota obtenida.
 
-### La respuesta a este punto se da utilizando la funcion AVG para encontrar la mejor nota, pero con una subconsulta para seleccionar la mejor de los estudiantes uqe presentaro mas de una vez el examen.
+#### La respuesta a este punto se da utilizando la funcion AVG para encontrar la mejor nota, pero con una subconsulta para seleccionar la mejor de los estudiantes uqe presentaro mas de una vez el examen.
 
 >conn = sqlite3.connect('test.db')
 >
